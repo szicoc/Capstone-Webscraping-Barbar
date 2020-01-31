@@ -56,7 +56,7 @@ def index():
 
     #This part for rendering matplotlib
     fig = plt.figure(figsize=(5,2),dpi=300)
-    df.plot()
+    df.plot(kind='line',x=period)
     
     #Do not change this part
     plt.savefig('plot1',bbox_inches="tight") 
